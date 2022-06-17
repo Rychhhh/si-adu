@@ -78,6 +78,10 @@ Route::middleware('auth')->group(function() {
             Route::get('petugas/create', [DataController::class, 'tambahDataPetugas']);
             Route::get('petugas/store', [DataController::class, 'storeDataPetugas']);
 
+            Route::get('profile-diri', [ProfileController::class, 'viewProfile']); //profile
+            Route::put('ubah-photo', [ProfileController::class, 'changeFotoProfile'])->name('ubah-photo');
+            Route::put('ubah-data-profile', [ProfileController::class, 'changeDataProfile'])->name('ubah-data');
+
         });
 
 
