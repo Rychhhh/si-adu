@@ -49,7 +49,7 @@ return [
             'host' => env('DB_HOST', 'db4free.net'),
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE', 'lara_pengaduan'),
-            'username' => env('DB_USERNAME', 'laravelsecond'),
+            'username' => env('DB_USERNAME', 'rayhan1631'),
             'password' => env('DB_PASSWORD', 'rayhanprogrammer'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
