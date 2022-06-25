@@ -41,7 +41,6 @@
 
 
   {{-- Jquery  --}}
-  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 
   {{-- Toastr ANd Sweet Alert --}}
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.3/dist/sweetalert2.all.min.js"></script>
@@ -88,6 +87,7 @@
           }
         });
       }
+
   </script>
 </body>
 

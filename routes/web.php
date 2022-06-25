@@ -62,7 +62,7 @@ Route::middleware('auth')->group(function() {
         // Masyarakat
         Route::middleware('CheckRole:pengaju')->group(function() {
             Route::get('ajukan-pengaduan', [PengaduanController::class, 'create']);
-            Route::post('all-pengaduan', [PengaduanController::class , 'store']);
+            Route::post('all-pengaduan', [PengaduanController::class , 'store'])->name('post.pengaju');
         });
 
 

@@ -16,7 +16,7 @@
 @endsection
 
 @section('container')
-    <form action="{{ url('all-pengaduan') }}" method="POST" enctype="multipart/form-data">
+    <form action="{{ route('post.pengaju') }}" method="POST" enctype="multipart/form-data">
       @csrf
         <div class="form-group mt-3">
             <label for="email">Name :</label>
@@ -24,11 +24,14 @@
           </div>
           <div class="form-group mt-3">
             <label for="pwd">Laporan:</label>
-            <textarea type="text" class="form-control" name="laporan"></textarea>
+            <textarea type="text" class="form-control" name="laporan" required></textarea>
+            <script>
+            CKEDITOR.replace( 'laporan' )
+            </script>
           </div>
           <div class="form-group mt-3">
             <label for="email">Photo :</label>
-            <input type="file" class="form-control" name="photo">
+            <input type="file" class="form-control" name="photo" required>
           </div>
           <button type="submit" class="btn btn-success">Submit</button>
     </form>

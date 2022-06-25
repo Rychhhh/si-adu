@@ -28,5 +28,13 @@
 
     {{-- Toastr --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+    
+    {{-- <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> --}}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    {{-- <link rel="stylesheet" href="{{ asset('/assets/css/dropify.css') }}">
+    <script src="{{ asset('/assets/js/dropify.js') }}"></script> --}}
+    <script src="https://cdn.ckeditor.com/4.19.0/full-all/ckeditor.js"></script>
   
   </head>
