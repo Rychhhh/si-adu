@@ -35,7 +35,7 @@
             
         <tr>
             <th scope="row" class="p-3">{{ $loop->iteration }}</th>
-            <td class="p-3">{{ $item->laporan }}</td>
+            <td class="p-3">{!! str()->limit($item->laporan, 20) !!}</td>
             <td class="p-3">{{ date('D - d M Y',$item->created_at->timestamp) }}</td>
             <td class="p-3">
                 <img src="{{ asset('storage/laporan/'. $item->photo) }}" alt="{{ $item->name }}" width="200" height="100">

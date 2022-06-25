@@ -43,12 +43,17 @@ class PengaduanController extends Controller
      */
     public function store(Request $request)
     {
+        
         //
 
-        $file_name = $request->photo->getClientOriginalName();
-        $request->photo->storeAs('laporan', $file_name);
+        if(!$request->hasFile('photo')){
+            return back()->withErrors(['photo' => 'Gambar wajib diisi']);
+        }
 
         // dd($request->photo);
+        $file_name = $request->photo->getClientOriginalName();
+        // $request->photo->storeAs(storage_path('laporan'), $file_name);
+        $request->photo->move(storage_path('app/public/laporan'), $file_name);
 
         $newPengajuan = new Pengajuan();
         $newPengajuan->name = $request->name;

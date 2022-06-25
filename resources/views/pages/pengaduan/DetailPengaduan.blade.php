@@ -13,7 +13,7 @@
     
       <!-- Main content -->
       <div class="row">
-        <div class="col-lg-8">
+        <div class="col-lg-12">
           <!-- Details -->
           <div class="card mb-4">
             <div class="card-body p-4">
@@ -37,7 +37,7 @@
                   <div class="mt-5">
                         <h3>Isi Laporan</h3>
 
-                         Laporan :    {{ $detail->laporan }}
+                        {!! $detail->laporan !!}
                   </div>
               </div>
 
