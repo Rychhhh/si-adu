@@ -31,8 +31,21 @@
           </div>
           <div class="form-group mt-3">
             <label for="email">Photo :</label>
-            <input type="file" class="form-control" name="photo" required>
+            <input type="file" class="form-control dropify-media" name="photo" required>
           </div>
           <button type="submit" class="btn btn-success">Submit</button>
     </form>
+@endsection
+
+@section('j_script')
+    <script>
+      $('.dropify-media').dropify({
+            messages: {
+                default: 'Drag and drop a file here or click',
+                replace: 'Drag and drop or click to replace',
+                remove: 'Remove',
+                error: 'Ooops, something wrong happended.'
+            },
+        });
+    </script>
 @endsection
